@@ -7,6 +7,12 @@ var UserSchema = new Schema({
     unique: true,
     required: true
   }
+
+  address:{
+  	type: String,
+  	unique: false,
+  	required: true
+  }
 });
 
 module.exports = mongoose.model('user', UserSchema);
